@@ -13,8 +13,8 @@
     <div class="row">
         {% for cat in cat_list %}
         <div class="col">
-          <div class="card p-2 g-col-6" style="width: 18rem;">
-              <img src="https://www.thesprucepets.com/thmb/2HF5pGwbA1_74qlubXRyEM_xxlk=/2121x0/filters:no_upscale():strip_icc()/GettyImages-1319774380-c3da91f9259a47e0966007f8e10690ba.jpg" class="card-img-top" alt="...">
+          <div class="card p-2 g-col-6 m-2" style="width: 18rem;">
+              <img src="{{ cat.upload.url }}" class="card-img-top" alt="...">
               <div class="card-body">
               <h5 class="card-title">{{ cat.name }}</h5>
               <p class="card-text">This cutie is a very {{ cat.get_size_display }} cat!</p>

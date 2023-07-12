@@ -6,7 +6,7 @@ from supercats.models import Cat
 # Create your views here.
 
 def hello_cat(request):
-    cat_list = Cat.objects.order_by("-created")[:5]
+    cat_list = Cat.objects.order_by("-created")[:6]
 
     context = {
         "cat_list": cat_list,

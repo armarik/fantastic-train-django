@@ -9,5 +9,6 @@ class Cat(models.Model):
     ]    
     name = models.CharField(max_length=30)
     size = models.CharField(max_length=1, choices=CAT_SIZES)
+    upload = models.ImageField(upload_to ='media/')
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
