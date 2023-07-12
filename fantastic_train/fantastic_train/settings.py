@@ -55,7 +55,7 @@ ROOT_URLCONF = "fantastic_train.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ["supercats/templates/"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
