@@ -31,3 +31,16 @@ python manage.py startapp fantastic_train
 ```console
 python manage.py runserver
 ```
+
+# Run migrations
+
+```console
+python manage.py migrate
+```
+
+# Creating admin super user
+
+```console
+python manage.py createsuperuser
+```
+
